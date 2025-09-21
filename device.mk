@@ -22,6 +22,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946640660707475.xml
 
+# Fingerprint
+$(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus:libudfps_extension.oplus)
+
 # LiveDisplay
 $(call soong_config_set_bool,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
 
@@ -43,6 +46,9 @@ $(call soong_config_set,qtipower,mode_ext_lib,power-ext-oplus)
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.oplus
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.oplus
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
