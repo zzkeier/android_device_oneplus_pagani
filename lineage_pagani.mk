@@ -18,14 +18,14 @@ PRODUCT_NAME := lineage_pagani
 PRODUCT_DEVICE := pagani
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := CPH2653
+PRODUCT_MODEL := PKX110
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="qssi_64-user 16 BP2A.250605.015 1762797805266 release-keys" \
-    BuildFingerprint=OnePlus/CPH2653EEA/OP5D55L1:16/BP2A.250605.015/V.R4T3.31c67c8-110000d-110000a:user/release-keys \
-    DeviceName=OP5D55L1 \
-    DeviceProduct=CPH2653 \
-    SystemDevice=OP5D55L1 \
-    SystemName=CPH2653
+    BuildDesc="qssi_64-user 16 AP3A.240617.008 1761797411 release-keys" \
+    BuildFingerprint=OnePlus/PKX110/OP60F5L1:16/AP3A.240617.008/V.192ddd9_77f7b3_768d04:user/release-keys \
+    DeviceName=OP60F5L1 \
+    DeviceProduct=PKX110 \
+    SystemDevice=OP60F5L1 \
+    SystemName=PKX110
