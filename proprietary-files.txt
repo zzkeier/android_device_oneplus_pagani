@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13 (CPH2653_16.0.1.304(EX01)).
+## are from OnePlus 13T
 
 # ACDB
 odm/etc/acdbdata/acdb_cal.acdb:vendor/etc/acdbdata/sun_mtp/acdb_cal.acdb
@@ -9,11 +9,35 @@ odm/etc/acdbdata/up_ve_enpuv5_hh.eai
 # Audio
 odm/lib64/liboprec_audrec.so
 odm/lib64/liboprec_audrec_wrapper.so
+#odm/lib64/hw/audio.binaural_record.default.so
+#odm/lib64/hw/audio.virtual.default.so
+#odm/lib/hw/audio.virtual.default.so
+#vendor/lib64/hw/audio.bluetooth.default.so
+#vendor/etc/audio/audio_module_config_primary.xml
+vendor/lib64/hw/audio.usb.default.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.primary.default.so
+vendor/lib/hw/audio.usb.default.so
+vendor/lib/hw/audio.primary.default.so
 
 # Audio configs
 odm/etc/mixer_paths.xml
 odm/etc/resourcemanager.xml
 odm/etc/usecaseKvManager.xml
+vendor/etc/audio/sku_kera/mixer_paths_kera_mtp.xml
+vendor/etc/audio/sku_kera/mixer_paths_kera_qrd.xml
+vendor/etc/audio/sku_kera/mixer_paths_kera_cdp.xml
+vendor/etc/audio/sku_kera/mixer_paths_kera_mtp_qmp.xml
+vendor/etc/audio/sku_sun/mixer_paths_sun_mtp.xml
+vendor/etc/audio/sku_sun/mixer_paths_sun_cdp.xml
+vendor/etc/audio/sku_sun/mixer_paths_sun_mtp_wsa883x_qmp.xml
+vendor/etc/audio/sku_sun/mixer_paths_sun_qrd.xml
+vendor/etc/audio/sku_sun/mixer_paths_sun_qrd_sku2.xml
+vendor/etc/audio/sku_tuna/mixer_paths_tuna_qrd.xml
+vendor/etc/audio/sku_tuna/mixer_paths_tuna_mtp_qmp.xml
+vendor/etc/audio/sku_tuna/mixer_paths_tuna_cdp.xml
+vendor/etc/audio/sku_tuna/mixer_paths_tuna_mtp.xml
+vendor/etc/audio/sku_tuna/mixer_paths_tuna7_mtp.xml
 
 # Audio firmware
 # odm/firmware/aw882xx_acf.bin
@@ -44,7 +68,11 @@ odm/etc/audio/oprec_audrec_params/oprec_record_ID7_Interview.bin
 odm/etc/audio/oprec_audrec_params/oprec_record_ID8_Fast.bin
 odm/etc/audio/oprec_audrec_params/oprec_record_ID99_Bypass.bin
 odm/etc/audio/oprec_audrec_params/oprec_record_ID9_HE.bin
-
+odm/etc/audio_algos_ver/OPAX_Version.txt
+odm/etc/audio_algos_ver/OPREC_version.txt
+odm/etc/audio_algos_ver/OPSPT_Version.txt
+odm/etc/audio_algos_ver/OPSR_Version.txt
+odm/etc/audio_algos_ver/OPVE_Version.txt
 
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
@@ -774,6 +802,7 @@ odm/lib64/libc++_shared.so
 odm/lib64/libcam.odnn.interface.so
 odm/lib64/libcam.oplus.3a.v2.so
 odm/lib64/libcam.oplus.3a.v3.so
+odm/lib64/libcam.oplus.3a.v4.so
 odm/lib64/libcreatebin.so
 odm/lib64/libcreatebinForBaseretouch.so
 odm/lib64/libcreatebinForFaceretouch.so
@@ -1427,4 +1456,9 @@ odm/etc/wifi/peach/bdwlan.elf
 odm/etc/wifi/peach/regdb.bin
 odm/etc/wifi/peach/regdb_version
 
+#tmp import
+odm/lib64/libSpecRecon.so
+odm/lib64/libMNN.so
+odm/lib64/libVideoAIProc.so
+odm/lib64/libVideoLTM.so
 # vi:ft=conf
