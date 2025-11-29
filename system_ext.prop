@@ -1,2 +1,10 @@
 # IFAA
 sys.oplus.ifaa.model=ONEPLUS-R23821
+
+# Disable unsupported LE Audio features to avoid SystemUI NPE
+bluetooth.profile.le_audio.enabled=false
+bluetooth.profile.bap.unicast_server.enabled=false
+bluetooth.profile.bap.broadcast.source.enabled=false
+bluetooth.profile.bap.broadcast.assistant.enabled=false
+bluetooth.profile.csip.enabled=false
+bluetooth.profile.mcp.server.enabled=false
