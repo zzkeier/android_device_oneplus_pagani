@@ -19,6 +19,8 @@ vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/audio.primary.default.so
+odm/lib/rfsa/adsp/libtfadsp_sb5_5_rx.so
+odm/lib/rfsa/adsp/libtfadsp_sb5_5_tx.so
 
 # Audio configs
 odm/etc/mixer_paths.xml
@@ -40,7 +42,7 @@ vendor/etc/audio/sku_tuna/mixer_paths_tuna_mtp.xml
 vendor/etc/audio/sku_tuna/mixer_paths_tuna7_mtp.xml
 
 # Audio firmware
-# odm/firmware/aw882xx_acf.bin
+odm/firmware/tfa98xx.cnt
 
 # Audio params
 odm/etc/audio/oprec_audrec_params/oprec_audrec_config.txt
