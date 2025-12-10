@@ -82,21 +82,22 @@ volume index from 0 to 100.
                                              ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_SYSTEM" deviceCategory="DEVICE_CATEGORY_HEADSET">
         <point>1,-6400</point>
-        <point>2,-2600</point>
-        <point>3,-2400</point>
-        <point>4,-2200</point>
-        <point>5,-2000</point>
-        <point>6,-1800</point>
-        <point>7,-1600</point>
-        <point>8,-1400</point>
-        <point>9,-1300</point>
-        <point>10,-1200</point>
-        <point>11,-1100</point>
-        <point>12,-1000</point>
-        <point>13,-900</point>
-        <point>14,-800</point>
-        <point>15,-700</point>
-        <point>16,-600</point>
+	    <point>5,-2800</point>
+        <point>10,-2600</point>
+        <point>15,-2400</point>
+        <point>20,-2200</point>
+        <point>25,-2000</point>
+        <point>30,-1800</point>
+        <point>35,-1600</point>
+        <point>40,-1400</point>
+        <point>45,-1300</point>
+        <point>50,-1200</point>
+        <point>55,-1100</point>
+        <point>60,-1000</point>
+        <point>65,-900</point>
+        <point>70,-800</point>
+        <point>75,-700</point>
+        <point>80,-600</point>
     </volume>
     <volume stream="AUDIO_STREAM_SYSTEM" deviceCategory="DEVICE_CATEGORY_SPEAKER"
                                          ref="DEFAULT_SYSTEM_VOLUME_CURVE"/>
@@ -119,21 +120,22 @@ volume index from 0 to 100.
     #else OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_SPEAKER">
         <point>1,-6400</point>
-        <point>2,-4500</point>
-        <point>3,-4100</point>
-        <point>4,-3700</point>
-        <point>5,-3300</point>
-        <point>6,-2900</point>
-        <point>7,-2600</point>
-        <point>8,-2300</point>
-        <point>9,-2000</point>
-        <point>10,-1700</point>
-        <point>11,-1400</point>
-        <point>12,-1100</point>
-        <point>13,-800</point>
-        <point>14,-500</point>
-        <point>15,-350</point>
-        <point>16,-250</point>
+        <point>5,-4900</point>
+        <point>10,-4500</point>		
+        <point>15,-4100</point>
+        <point>20,-3700</point>
+        <point>25,-3300</point>
+        <point>30,-2900</point>
+        <point>35,-2600</point>
+        <point>40,-2300</point>
+        <point>45,-2000</point>
+        <point>50,-1700</point>
+        <point>55,-1400</point>
+        <point>60,-1100</point>
+        <point>65,-800</point>
+        <point>70,-500</point>
+        <point>75,-300</point>
+        <point>80,-100</point>
     </volume>
     <!-- #endif OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_RING" deviceCategory="DEVICE_CATEGORY_EARPIECE"
@@ -152,6 +154,10 @@ volume index from 0 to 100.
                                         ref="DEFAULT_MEDIA_VOLUME_CURVE"/>
     <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_HEARING_AID"
                                         ref="DEFAULT_HEARING_AID_VOLUME_CURVE"/>
+    <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_HEADSET"
+                                        ref="DEFAULT_MEDIA_VOLUME_CURVE_A2DP"/>
+    <volume stream="AUDIO_STREAM_MUSIC" deviceCategory="DEVICE_CATEGORY_EXT_MEDIA"
+                                        ref="DEFAULT_MEDIA_VOLUME_CURVE_A2DP"/>
     <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_HEADSET"
                                         ref="DEFAULT_NON_MUTABLE_HEADSET_VOLUME_CURVE"/>
     <!-- #ifdef OPLUS_BUG_STABILITY
@@ -165,21 +171,22 @@ volume index from 0 to 100.
     #else OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_SPEAKER">
         <point>1,-6400</point>
-        <point>2,-4700</point>
-        <point>3,-4400</point>
-        <point>4,-4100</point>
-        <point>5,-3800</point>
-        <point>6,-3500</point>
-        <point>7,-3200</point>
-        <point>8,-2900</point>
-        <point>9,-2600</point>
-        <point>10,-2300</point>
-        <point>11,-2000</point>
-        <point>12,-1700</point>
-        <point>13,-1400</point>
-        <point>14,-1100</point>
-        <point>15,-800</point>
-        <point>16,-500</point>
+        <point>5,-5000</point>		
+        <point>10,-4700</point>
+        <point>15,-4400</point>
+        <point>20,-4100</point>
+        <point>25,-3800</point>
+        <point>30,-3500</point>
+        <point>35,-3200</point>
+        <point>40,-2900</point>
+        <point>45,-2600</point>
+        <point>50,-2300</point>
+        <point>55,-2000</point>
+        <point>60,-1700</point>
+        <point>65,-1400</point>
+        <point>70,-1100</point>
+        <point>75,-800</point>
+        <point>80,-500</point>
     </volume>
     <!-- #endif OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_ALARM" deviceCategory="DEVICE_CATEGORY_EARPIECE"
@@ -201,21 +208,22 @@ volume index from 0 to 100.
     #else OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_SPEAKER">
         <point>1,-6400</point>
-        <point>2,-4200</point>
-        <point>3,-3900</point>
-        <point>4,-3600</point>
-        <point>5,-3300</point>
-        <point>6,-3000</point>
-        <point>7,-2700</point>
-        <point>8,-2400</point>
-        <point>9,-2100</point>
-        <point>10,-1800</point>
-        <point>11,-1600</point>
-        <point>12,-1400</point>
-        <point>13,-1200</point>
-        <point>14,-1000</point>
-        <point>15,-900</point>
-        <point>16,-700</point>
+        <point>5,-4100</point>
+        <point>10,-3800</point>
+        <point>15,-3500</point>
+        <point>20,-3200</point>
+        <point>25,-2900</point>
+        <point>30,-2600</point>
+        <point>35,-2300</point>
+        <point>40,-2100</point>
+        <point>45,-1900</point>
+        <point>50,-1700</point>
+        <point>55,-1500</point>
+        <point>60,-1300</point>
+        <point>65,-1100</point>
+        <point>70,-900</point>
+        <point>75,-700</point>
+        <point>80,-500</point>
     </volume>
     <!-- #endif OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_NOTIFICATION" deviceCategory="DEVICE_CATEGORY_EARPIECE"
@@ -293,21 +301,22 @@ volume index from 0 to 100.
     #else OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_DTMF" deviceCategory="DEVICE_CATEGORY_HEADSET">
         <point>1,-7000</point>
-        <point>2,-5200</point>
-        <point>3,-5100</point>
-        <point>4,-5000</point>
-        <point>5,-4900</point>
-        <point>6,-4800</point>
-        <point>7,-4700</point>
-        <point>8,-4600</point>
-        <point>9,-4500</point>
-        <point>10,-4400</point>
-        <point>11,-4300</point>
-        <point>12,-4200</point>
-        <point>13,-4100</point>
-        <point>14,-4000</point>
-        <point>15,-3900</point>
-        <point>16,-3800</point>
+	    <point>5,-5300</point>
+        <point>10,-5200</point>
+        <point>15,-5100</point>
+        <point>20,-5000</point>
+        <point>25,-4900</point>
+        <point>30,-4800</point>
+        <point>35,-4700</point>
+        <point>40,-4600</point>
+        <point>45,-4500</point>
+        <point>50,-4400</point>
+        <point>55,-4300</point>
+        <point>60,-4200</point>
+        <point>65,-4100</point>
+        <point>70,-4000</point>
+        <point>75,-3900</point>
+        <point>80,-3800</point>
     </volume>
     <!-- #endif OPLUS_BUG_STABILITY -->
     <!-- #ifdef OPLUS_BUG_STABILITY
@@ -317,21 +326,22 @@ volume index from 0 to 100.
     #else OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_DTMF" deviceCategory="DEVICE_CATEGORY_SPEAKER">
         <point>1,-6000</point>
-        <point>2,-5300</point>
-        <point>3,-5100</point>
-        <point>4,-4900</point>
-        <point>5,-4700</point>
-        <point>6,-4500</point>
-        <point>7,-4300</point>
-        <point>8,-4100</point>
-        <point>9,-3900</point>
-        <point>10,-3700</point>
-        <point>11,-3500</point>
-        <point>12,-3300</point>
-        <point>13,-3100</point>
-        <point>14,-2900</point>
-        <point>15,-2700</point>
-        <point>16,-2500</point>
+	    <point>5,-5500</point>
+        <point>10,-5300</point>
+        <point>15,-5100</point>
+        <point>20,-4900</point>
+        <point>25,-4700</point>
+        <point>30,-4500</point>
+        <point>35,-4300</point>
+        <point>40,-4100</point>
+        <point>45,-3900</point>
+        <point>50,-3700</point>
+        <point>55,-3500</point>
+        <point>60,-3300</point>
+        <point>65,-3100</point>
+        <point>70,-2900</point>
+        <point>75,-2700</point>
+        <point>80,-2500</point>
     </volume>
     <!-- #endif OPLUS_BUG_STABILITY -->
     <volume stream="AUDIO_STREAM_DTMF" deviceCategory="DEVICE_CATEGORY_EARPIECE"
