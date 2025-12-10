@@ -80,7 +80,7 @@ module = ExtractUtilsModule(
 )
 
 if __name__ == '__main__':
-    utils = ExtractUtils.device(
-        module
+    utils = ExtractUtils.device_with_common(
+        module, 'sm8750-common', module.vendor
     )
     utils.run()

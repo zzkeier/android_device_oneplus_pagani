@@ -1291,6 +1291,7 @@ vendor/etc/ltm_config_AA569_P_3_A0019_dsc_cmd_mode_panel.xml
 vendor/etc/spr_cfg_AA569_P_3_A0019_dsc_cmd_mode_panel.xml
 
 # Fingerprint firmware
+# Fingerprint firmware
 odm/firmware/uff_face.b00
 odm/firmware/uff_face.b01
 odm/firmware/uff_face.b02
@@ -1326,6 +1327,12 @@ odm/firmware/uff_spi.mdt
 odm/etc/nfc/libnfc-mtp-SN220.conf_23821:odm/etc/libnfc-mtp-SN220.conf_23821
 odm/etc/nfc/libnfc-mtp-SN220.conf_23893:odm/etc/libnfc-mtp-SN220.conf_23893
 odm/etc/nfc/libnfc-nci.conf_23821:vendor/etc/libnfc-nci.conf
+
+#Qseecomd
+odm/lib64/libqsee_keybox_ca.so
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
+vendor/lib/libQSEEComAPI.so
 
 # Sensors
 vendor/lib64/sensors.qsh.so
@@ -1463,4 +1470,50 @@ odm/lib64/libSpecRecon.so
 odm/lib64/libMNN.so
 odm/lib64/libVideoAIProc.so
 odm/lib64/libVideoLTM.so
+
+odm/firmware/secure_ta/antdtx.b00
+odm/firmware/secure_ta/antdtx.mdt
+odm/firmware/secure_ta/cryptoeng.b00
+odm/firmware/secure_ta/cryptoeng.mdt
+odm/firmware/secure_ta/fidoctap.b00
+odm/firmware/secure_ta/fidoctap.mdt
+odm/firmware/secure_ta/fidotap.b00
+odm/firmware/secure_ta/fidotap.mdt
+odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_odm
+system/framework/vendor.oplus.hardware.biometrics.fingerprint-V2.1-java.jar
+system/framework/android.hardware.biometrics.fingerprint-V2.3-java.jar
+system_ext/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+system_ext/bin/fingerprintlog_manager.sh
+product/etc/permissions/fingerprint_auth_prompt_skip_list.xml
+odm/etc/permissions/oplus.fingerprint.unlock_without_icon.xml
+odm/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so;MODULE_SUFFIX=_odm
+odm/lib64/android.hardware.biometrics.fingerprint@2.2.so;MODULE_SUFFIX=_odm
+odm/lib64/android.hardware.biometrics.fingerprint@2.3.so;MODULE_SUFFIX=_odm
+odm/lib64/android.hardware.biometrics.fingerprint-V1-ndk.so;MODULE_SUFFIX=_odm
+odm/lib64/android.hardware.biometrics.fingerprint@2.1.so;MODULE_SUFFIX=_odm
+odm/init.oplus.fingerprints.rc
+odm/bin/init.oplus.fingerprints.sh
+my_product/etc/permissions/android.hardware.fingerprint.xml
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+system_ext/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml
+system_ext/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml
+odm/etc/permissions/vendor-oplus-hardware-biometrics-fido2.xml
+odm/etc/permissions/vendor-oplus-hardware-biometrics-fido.xml
+odm/lib64/android.hardware.biometrics.common-V4-ndk.so;MODULE_SUFFIX=_odm
+odm/lib64/android.hardware.biometrics.common-V3-ndk.so;MODULE_SUFFIX=_odm
+odm/lib64/android.hardware.biometrics.common-V1-ndk.so;MODULE_SUFFIX=_odm
+
+# OPLUS Display
+odm/bin/cwb_utils_aidl
+odm/lib64/libdisplayaidlapis.so
+odm/lib64/libdisplayfossfeature_nature.so
+vendor/etc/2024-10-11_platform_RSA_SM8750_license_d07bab28-156e-49b6-9eda-103eb7c6f6de.pfm
+vendor/etc/2024-09-06_platform_RSA_SM8750_license_1c6f20f8-67d1-46ef-818d-469363847d91.pfm
+vendor/etc/platform_RSA_SM8750_license_c8338967-b56e-4693-ae1b-7a17ac371ff6.pfm
+vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so;MODULE_SUFFIX=_vendor
+odm/etc/vintf/manifest/manifest_displaycolorfeature_aidl.xml
+odm/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
+odm/lib/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
+odm/bin/displaycolorfeature_test
+
 # vi:ft=conf
