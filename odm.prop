@@ -9,6 +9,15 @@ vendor.display.force_lm_to_fb_config=1
 vendor.display.pdfr=1
 vendor.display.uir_support=1
 
+ro.boot.prjname=24821
+ro.separate.soft=24821
+ro.oplus.image.odm.type=24821
+vendor.oplus.touch.customifplib.path=/odm/firmware/tp/24821/libIfp.so
+
+ro.oplus.image.my_product.type=24821
+ro.oplus.image.my_preload.type=domestic_24821_OnePlus_CN_ALLNET
+ro.oplus.image.my_region.type=CN_all
+ro.oplus.image.my_stock.type=domestic_OnePlus
 # Regional properties
 ro.product.property_source_order=odm,vendor,product,system_ext,system
 import /odm/etc/${ro.boot.prjname}/build.default.prop

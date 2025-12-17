@@ -1381,6 +1381,16 @@ odm/firmware/tp/24821/sys_touch_algo_feature_config.xml
 odm/firmware/tp/24821/sys_touch_function_feature_config.xml
 odm/firmware/tp/24821/sys_touch_scene_config.xml
 
+odm/etc/permissions/vendor-oplus-hardware-touch-V1.xml
+odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so;MODULE_SUFFIX=_odm
+odm/lib64/vendor.oplus.hardware.touch-V2-ndk.so;MODULE_SUFFIX=_odm
+odm/lib/vendor.oplus.hardware.touch-V1-ndk.so;MODULE_SUFFIX=_odm
+odm/lib/vendor.oplus.hardware.touch-V2-ndk.so;MODULE_SUFFIX=_odm
+system_ext/framework/vendor.oplus.hardware.touch-V1-java.jar
+system_ext/framework/vendor.oplus.hardware.touch-V1.0-java.jar
+system_ext/framework/vendor.oplus.hardware.touch-V2-java.jar
+
+
 # Vibration effects
 odm/etc/vibrator/809/def/effect_100.bin
 odm/etc/vibrator/809/def/effect_101.bin
@@ -1515,5 +1525,12 @@ odm/etc/vintf/manifest/manifest_displaycolorfeature_aidl.xml
 odm/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
 odm/lib/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so
 odm/bin/displaycolorfeature_test
+
+system/etc/permissions/platform-oplus.xml
+system/etc/permissions/privapp-permissions-oplus.xml
+system_ext/etc/permissions/privapp-permissions-oplus-common-ext.xml
+system_ext/etc/permissions/privapp-permissions-oplus-common.xml
+system_ext/etc/permissions/privapp-permissions-oplus-domestic.xml
+system_ext/etc/permissions/vendor-oplus-hardware-touch.xml
 
 # vi:ft=conf
