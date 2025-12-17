@@ -1,0 +1,49 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_defaults {
+    name: "libshims_aidl_fingerprint.pagani_defaults",
+    srcs: [
+        "SensorPropsShim.cpp",
+        "FppressShim.cpp",
+        ],
+    shared_libs: [
+        "libbinder_ndk",
+        "liblog",
+        "libdl",
+        "libbase",
+    ],
+    cflags: ["-Wno-unused-parameter"],
+    device_specific: true,
+}
+
+cc_library_shared {
+    name: "libshims_aidl_fingerprint_v2.pagani",
+    defaults: ["libshims_aidl_fingerprint.pagani_defaults"],
+    static_libs: ["android.hardware.biometrics.fingerprint-V2-ndk"],
+}
+
+cc_library_shared {
+    name: "libshims_aidl_fingerprint_v3.pagani",
+    defaults: ["libshims_aidl_fingerprint.pagani_defaults"],
+    static_libs: ["android.hardware.biometrics.fingerprint-V3-ndk"],
+}
+
+cc_library_shared {
+    name: "libshims_aidl_fingerprint_v4.pagani",
+    defaults: ["libshims_aidl_fingerprint.pagani_defaults"],
+    static_libs: ["android.hardware.biometrics.fingerprint-V4-ndk"],
+}
+
+cc_library {
+    name: "libshims_fingerprint.pagani",
+    srcs: ["BiometricsFingerprintShim.cpp"],
+    shared_libs: [
+        "libcutils",
+        "liblog",
+    ],
+    device_specific: true,
+}
