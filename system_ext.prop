@@ -1,5 +1,5 @@
 # IFAA
-sys.oplus.ifaa.model=ONEPLUS-R23821
+sys.oplus.ifaa.model=ONEPLUS-R24821
 
 # Disable unsupported LE Audio features to avoid SystemUI NPE
 bluetooth.profile.le_audio.enabled=false

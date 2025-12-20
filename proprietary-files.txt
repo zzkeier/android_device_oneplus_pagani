@@ -1225,7 +1225,7 @@ vendor/firmware/CAMERA_ICP_1.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 
 # Charger firmware
-odm/firmware/fastchg/24821/charging_hyper_mode_config.txt:odm/firmware/fastchg/23821/charging_hyper_mode_config.txt
+odm/firmware/fastchg/24821/charging_hyper_mode_config.txt:odm/firmware/fastchg/24821/charging_hyper_mode_config.txt
 odm/firmware/fastchg/batt_dchg_ctrl_config_table.txt
 odm/firmware/fastchg/batt_eis_config.txt
 odm/firmware/fastchg/batt_si_loss_config_table.txt
@@ -1291,7 +1291,6 @@ vendor/etc/ltm_config_AA569_P_3_A0019_dsc_cmd_mode_panel.xml
 vendor/etc/spr_cfg_AA569_P_3_A0019_dsc_cmd_mode_panel.xml
 
 # Fingerprint firmware
-# Fingerprint firmware
 odm/firmware/uff_face.b00
 odm/firmware/uff_face.b01
 odm/firmware/uff_face.b02
@@ -1324,11 +1323,10 @@ odm/firmware/uff_spi.b08
 odm/firmware/uff_spi.mdt
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN220.conf_23821:odm/etc/libnfc-mtp-SN220.conf_23821
-odm/etc/nfc/libnfc-mtp-SN220.conf_23893:odm/etc/libnfc-mtp-SN220.conf_23893
-odm/etc/nfc/libnfc-nci.conf_23821:vendor/etc/libnfc-nci.conf
+odm/etc/nfc/libnfc-mtp-SN220.conf_24821:odm/etc/libnfc-mtp-SN220.conf_24821
+odm/etc/nfc/libnfc-nci.conf_24821:vendor/etc/libnfc-nci.conf
 
-#Qseecomd
+# Qseecomd
 odm/lib64/libqsee_keybox_ca.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
