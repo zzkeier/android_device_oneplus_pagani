@@ -23,7 +23,6 @@ odm/lib/rfsa/adsp/libtfadsp_sb5_5_rx.so
 odm/lib/rfsa/adsp/libtfadsp_sb5_5_tx.so
 
 # Audio configs
-odm/etc/mixer_paths.xml
 odm/etc/resourcemanager.xml
 odm/etc/usecaseKvManager.xml
 vendor/etc/audio/sku_kera/mixer_paths_kera_mtp.xml
