@@ -15,7 +15,6 @@ odm/lib64/liboprec_audrec.so
 odm/lib64/liboprec_audrec_wrapper.so
 
 # Audio configs
-odm/etc/mixer_paths.xml
 odm/etc/resourcemanager.xml
 odm/etc/usecaseKvManager.xml
 
