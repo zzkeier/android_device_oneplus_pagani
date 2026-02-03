@@ -1,0 +1,1 @@
+allow system_suspend sysfs_suspend_stats:file r_file_perms;

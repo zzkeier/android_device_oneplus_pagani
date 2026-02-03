@@ -1,0 +1,1 @@
+genfscon sysfs /devices/platform/hypervisor/hypervisor:qcom,resource-manager-rpc u:object_r:sysfs_suspend_stats:s0
