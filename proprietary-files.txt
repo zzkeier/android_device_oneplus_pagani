@@ -1,16 +1,21 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus 13s (CPH2723_16.3.501(EX01)).
+## are from OnePlus 13T (PKX110_16.0.3.501(CN01)).
 
 # ACDB
 odm/etc/acdbdata/acdb_cal.acdb:vendor/etc/acdbdata/sun_mtp/acdb_cal.acdb
 odm/etc/acdbdata/up_ve_enpuv5_ha.eai
 odm/etc/acdbdata/up_ve_enpuv5_hh.eai
 
+# ADSP modules
+odm/lib/rfsa/adsp/libtfadsp_sb5_5_rx.so
+odm/lib/rfsa/adsp/libtfadsp_sb5_5_tx.so
+
 # Audio
 odm/lib64/liboprec_audrec.so
 odm/lib64/liboprec_audrec_wrapper.so
 
 # Audio configs
+odm/etc/mixer_paths.xml
 odm/etc/resourcemanager.xml
 odm/etc/usecaseKvManager.xml
 
@@ -46,6 +51,9 @@ odm/etc/audio/oprec_audrec_params/oprec_record_calibration.bin
 
 # Camera
 odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service
+odm/etc/camera/AIAE_Models/AIAEVideoModelMain.bin
+odm/etc/camera/AIAE_Models/AIAEVideoModelTele.bin
+odm/etc/camera/AIAE_Models/AIAEVideoModelWide.bin
 odm/etc/camera/aigc/aigc_models/blurDet_sm8750.bin
 odm/etc/camera/aigc/aigc_models/faceSeg_sm8750.bin
 odm/etc/camera/aigc/aigc_models/gfpgan1024_sm8750.bin
@@ -84,6 +92,9 @@ odm/etc/camera/basictone/odt/ODT_Video
 odm/etc/camera/basictone/setting/Ditherout
 odm/etc/camera/basictone/setting/FromXml
 odm/etc/camera/basictone/setting/SimTool.ini
+odm/etc/camera/basictone/setting_dolby/Ditherout
+odm/etc/camera/basictone/setting_dolby/FromXml
+odm/etc/camera/basictone/setting_dolby/SimTool.ini
 odm/etc/camera/basictone/vig/VigTab_Main
 odm/etc/camera/basictone/vig/VigTab_Tele
 odm/etc/camera/basictone/vig/VigTab_UTele
@@ -93,11 +104,34 @@ odm/etc/camera/cfr_bin/CFR_paganiInMain.bin
 odm/etc/camera/cfr_bin/CFR_paganiInTele.bin
 odm/etc/camera/cfr_bin/CFR_paganiMain.bin
 odm/etc/camera/cfr_bin/CFR_paganiTele.bin
+odm/etc/camera/config/camera_third_party_feature_config.protobuf
 odm/etc/camera/config/camera_unit_config
+odm/etc/camera/config/camera_unit_feature_config.protobuf
+odm/etc/camera/config/oplus_camera_algo_switch_config
 odm/etc/camera/config/oplus_camera_algo_traversal_config.json
+odm/etc/camera/config/oplus_camera_aps_config
+odm/etc/camera/config/oplus_camera_config
+odm/etc/camera/config/oplus_camera_preview_decision_config.json
+odm/etc/camera/config/oplus_preview_decision_params.json
+odm/etc/camera/config/paganiFront
+odm/etc/camera/config/paganiMain
+odm/etc/camera/config/paganiTele
+odm/etc/camera/config/pickref_params.xml
 odm/etc/camera/config/quick_visibility_white_list
+odm/etc/camera/config/sr_params.xml
 odm/etc/camera/config/video_beauty_default_config
+odm/etc/camera/dng/ColorMatrix1_paganiMain.txt
+odm/etc/camera/dng/ColorMatrix1_paganiTele.txt
+odm/etc/camera/dng/ColorMatrix2_paganiMain.txt
+odm/etc/camera/dng/ColorMatrix2_paganiTele.txt
+odm/etc/camera/dng/D28HUESATMap_paganiMain.txt
+odm/etc/camera/dng/D28HUESATMap_paganiTele.txt
+odm/etc/camera/dng/D65HUESATMap_paganiMain.txt
+odm/etc/camera/dng/D65HUESATMap_paganiTele.txt
+odm/etc/camera/dng/ToneCurve_paganiMain.txt
+odm/etc/camera/dng/ToneCurve_paganiTele.txt
 odm/etc/camera/facerestore/fr_models/BDET.bin
+odm/etc/camera/facerestore/fr_models/BG.bin
 odm/etc/camera/facerestore/fr_models/DB.bin
 odm/etc/camera/facerestore/fr_models/FS.bin
 odm/etc/camera/facerestore/fr_models/F_C.bin
@@ -105,6 +139,7 @@ odm/etc/camera/facerestore/fr_models/F_SE_A.bin
 odm/etc/camera/facerestore/fr_models/F_SE_B.bin
 odm/etc/camera/facerestore/fr_models/F_SL_A.bin
 odm/etc/camera/facerestore/fr_models/F_SL_B.bin
+odm/etc/camera/facerestore/fr_models/PRSG.bin
 odm/etc/camera/facerestore/fr_models/RM_GP_A.bix
 odm/etc/camera/facerestore/fr_models/RM_SE_A.bin
 odm/etc/camera/facerestore/fr_models/RM_SE_B.bin
@@ -127,6 +162,7 @@ odm/etc/camera/fb_model/002.png
 odm/etc/camera/fb_model/002_pre.bin
 odm/etc/camera/fb_model/003.png
 odm/etc/camera/fb_model/003_pre.bin
+odm/etc/camera/fb_model/003_pre.png
 odm/etc/camera/fb_model/010.png
 odm/etc/camera/fb_model/010_pre.bin
 odm/etc/camera/fb_model/010_pre.png
@@ -138,36 +174,47 @@ odm/etc/camera/fb_model/012_pre.bin
 odm/etc/camera/fb_model/013.png
 odm/etc/camera/fb_model/100.png
 odm/etc/camera/fb_model/100_pre.bin
+odm/etc/camera/fb_model/100_pre.png
 odm/etc/camera/fb_model/101.png
 odm/etc/camera/fb_model/101_pre.bin
+odm/etc/camera/fb_model/101_pre.png
 odm/etc/camera/fb_model/102.png
 odm/etc/camera/fb_model/102_pre.bin
 odm/etc/camera/fb_model/103.png
 odm/etc/camera/fb_model/103_pre.bin
+odm/etc/camera/fb_model/103_pre.png
 odm/etc/camera/fb_model/110.png
 odm/etc/camera/fb_model/110_pre.bin
+odm/etc/camera/fb_model/110_pre.png
 odm/etc/camera/fb_model/111.png
 odm/etc/camera/fb_model/111_pre.bin
+odm/etc/camera/fb_model/111_pre.png
 odm/etc/camera/fb_model/112.png
 odm/etc/camera/fb_model/112_pre.bin
 odm/etc/camera/fb_model/113.png
 odm/etc/camera/fb_model/200.png
 odm/etc/camera/fb_model/200_pre.bin
+odm/etc/camera/fb_model/200_pre.png
 odm/etc/camera/fb_model/201.png
 odm/etc/camera/fb_model/201_pre.bin
+odm/etc/camera/fb_model/201_pre.png
 odm/etc/camera/fb_model/202.png
 odm/etc/camera/fb_model/202_pre.bin
 odm/etc/camera/fb_model/203.png
 odm/etc/camera/fb_model/203_pre.bin
+odm/etc/camera/fb_model/203_pre.png
 odm/etc/camera/fb_model/210.png
 odm/etc/camera/fb_model/210_pre.bin
+odm/etc/camera/fb_model/210_pre.png
 odm/etc/camera/fb_model/211.png
 odm/etc/camera/fb_model/211_pre.bin
+odm/etc/camera/fb_model/211_pre.png
 odm/etc/camera/fb_model/212.png
 odm/etc/camera/fb_model/212_pre.bin
 odm/etc/camera/fb_model/213.png
 odm/etc/camera/fb_model/AIdeblemishSnapMask.bin
 odm/etc/camera/fb_model/AIdeblemishSnapMask.png
+odm/etc/camera/fb_model/AIdeblemishSnapMask2.bin
 odm/etc/camera/fb_model/SkinLUT_00.bin
 odm/etc/camera/fb_model/SkinLUT_01.bin
 odm/etc/camera/fb_model/SkinLUT_02.bin
@@ -237,7 +284,18 @@ odm/etc/camera/fb_model/unify_skin_base.bin
 odm/etc/camera/fb_model/whiteToneLut.bin
 odm/etc/camera/fb_model/whiteToneLut.png
 odm/etc/camera/filters_lut/masterlut/FromXml
+odm/etc/camera/filters_lut/masterlut/LMTLut0
+odm/etc/camera/filters_lut/masterlut/LMTLut1
 odm/etc/camera/filters_lut/masterlut/ODT_Photo
+odm/etc/camera/filters_lut/masterlut/SCLut0
+odm/etc/camera/filters_lut/masterlut/SCLut1
+odm/etc/camera/filters_lut/masterlut/SCLut2
+odm/etc/camera/filters_lut/masterlut/SCLut3
+odm/etc/camera/filters_lut/masterlut/SCLut4
+odm/etc/camera/filters_lut/masterlut/SCLut5
+odm/etc/camera/filters_lut/masterlut/SCLut6
+odm/etc/camera/filters_lut/masterlut/SCLut7
+odm/etc/camera/filters_lut/masterlut/SCLut8
 odm/etc/camera/filters_lut/masterlut/SimTool.ini
 odm/etc/camera/filters_lut/B1VLf4peM
 odm/etc/camera/filters_lut/B1aMqioxf
@@ -407,8 +465,8 @@ odm/etc/camera/gesture/tt_hand_det_v11.0.model
 odm/etc/camera/gesture/tt_hand_gesture_v11.1.model
 odm/etc/camera/gesture/tt_hand_kp_v6.0.model
 odm/etc/camera/gesture/tt_hand_lr_v3.0.model
-odm/etc/camera/hybridraw_models/ai_motion_mask_3Div2M.bin
 odm/etc/camera/hybridraw_models/ai_motion_mask.bin
+odm/etc/camera/hybridraw_models/ai_motion_mask_3Div2M.bin
 odm/etc/camera/hybridraw_models/ai_seg_human_landscape.bin
 odm/etc/camera/hybridraw_models/ai_seg_human_portrait.bin
 odm/etc/camera/hybridraw_models/ai_seg_sky_day.bin
@@ -428,6 +486,9 @@ odm/etc/camera/livephoto_coverenhancer/libs/libtrace.so
 odm/etc/camera/livephoto_coverenhancer/libs/libzlib.so
 odm/etc/camera/livephoto_coverenhancer/models/RRDBNet_sm8750.bin
 odm/etc/camera/livephoto_coverenhancer/models/license_release_gallery.lic
+odm/etc/camera/meishe_lut/800t_blues.bin
+odm/etc/camera/meishe_lut/800t_hdr.bin
+odm/etc/camera/meishe_lut/800t_sdr.bin
 odm/etc/camera/meishe_lut/ByYo3If
 odm/etc/camera/meishe_lut/Cold.cube.rgb.bin
 odm/etc/camera/meishe_lut/DL_A_MoneyBall.bin
@@ -437,19 +498,27 @@ odm/etc/camera/meishe_lut/DL_D_G4.cube.rgb.bin
 odm/etc/camera/meishe_lut/DL_L_B6.cube.rgb.bin
 odm/etc/camera/meishe_lut/Delta400.3dl.rgb.bin
 odm/etc/camera/meishe_lut/Emerald.cube.rgb.bin
+odm/etc/camera/meishe_lut/Fuji.bin
+odm/etc/camera/meishe_lut/KingsLanding.cube.rgb.bin
+odm/etc/camera/meishe_lut/Kodak.bin
 odm/etc/camera/meishe_lut/Martin.cube.rgb.bin
+odm/etc/camera/meishe_lut/Moonlight.bin
 odm/etc/camera/meishe_lut/OPLUSR0604.cube.rgb.bin
 odm/etc/camera/meishe_lut/Radiance.cube.rgb.bin
 odm/etc/camera/meishe_lut/Serenity.cube.rgb.bin
 odm/etc/camera/meishe_lut/Texture-70.cube.rgb.bin
 odm/etc/camera/meishe_lut/White.cube.rgb.bin
+odm/etc/camera/meishe_lut/Winterfell.cube.rgb.bin
 odm/etc/camera/meishe_lut/black_gold.bin
 odm/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin
 odm/etc/camera/meishe_lut/bright_coloured.bin
+odm/etc/camera/meishe_lut/ceremony.rgba.bin
+odm/etc/camera/meishe_lut/city.cube.rgb.bin
 odm/etc/camera/meishe_lut/cola.bin
 odm/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/drjw1994.bin
 odm/etc/camera/meishe_lut/drjw2010.bin
+odm/etc/camera/meishe_lut/festival.rgba.bin
 odm/etc/camera/meishe_lut/fuji-cc-high.bin
 odm/etc/camera/meishe_lut/fuji-cc-low.bin
 odm/etc/camera/meishe_lut/fuji-eterna-v2.cube.rgb.bin
@@ -458,6 +527,10 @@ odm/etc/camera/meishe_lut/fuji-proNegHi.bin
 odm/etc/camera/meishe_lut/fuji.cube.rgb.bin
 odm/etc/camera/meishe_lut/fuji_cc.bin
 odm/etc/camera/meishe_lut/gourmet.cube.rgb.bin
+odm/etc/camera/meishe_lut/gr.bw.rgba.bin
+odm/etc/camera/meishe_lut/gr.hi.bw.rgba.bin
+odm/etc/camera/meishe_lut/gr.nega.rgba.bin
+odm/etc/camera/meishe_lut/gr.posi.rgba.bin
 odm/etc/camera/meishe_lut/gt-24hour-city.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-3dcity.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-after-glow.cube.rgb.bin
@@ -473,6 +546,7 @@ odm/etc/camera/meishe_lut/gt-old-times.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin
 odm/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin
 odm/etc/camera/meishe_lut/interstellar_space.bin
+odm/etc/camera/meishe_lut/island.cube.rgb.bin
 odm/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin
 odm/etc/camera/meishe_lut/jzk-movie.cube.rgb.bin
@@ -480,8 +554,11 @@ odm/etc/camera/meishe_lut/kodak.cube.rgb.bin
 odm/etc/camera/meishe_lut/meicam.child.bin
 odm/etc/camera/meishe_lut/mono.cube.rgb.bin
 odm/etc/camera/meishe_lut/morandi.cube.rgb.bin
+odm/etc/camera/meishe_lut/morning.dream.cube.rgb.bin
+odm/etc/camera/meishe_lut/mountains.cube.rgb.bin
 odm/etc/camera/meishe_lut/natural.cube.rgb.bin
 odm/etc/camera/meishe_lut/neon-2020.cube.rgb.bin
+odm/etc/camera/meishe_lut/nostalgic.scene.cube.rgb.bin
 odm/etc/camera/meishe_lut/oplus-black-gold.cube.rgb.bin
 odm/etc/camera/meishe_lut/oplus-cyberpunk.cube.rgb.bin
 odm/etc/camera/meishe_lut/oplus-nightcity.cube.rgb.bin
@@ -493,11 +570,16 @@ odm/etc/camera/meishe_lut/red-red.cube.rgb.bin
 odm/etc/camera/meishe_lut/sky-blue.cube.rgb.bin
 odm/etc/camera/meishe_lut/tone-of-light.cube.rgb.bin
 odm/etc/camera/meishe_lut/tree-green.cube.rgb.bin
+odm/etc/camera/meishe_lut/vibe.rgba.bin
 odm/etc/camera/meishe_lut/vivid-cool.cube.rgb.bin
 odm/etc/camera/meishe_lut/vivid-lut.cube.rgb.bin
 odm/etc/camera/meishe_lut/vivid-warm.cube.rgb.bin
 odm/etc/camera/model/DocDetectV15.xbin
+odm/etc/camera/model/auto_crop_model.tflite
 odm/etc/camera/model/license.lic
+odm/etc/camera/model/obj_det.tflite
+odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e51.bundle
+odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle
 odm/etc/camera/pfb_bin/PreCalVarBinary.bin
 odm/etc/camera/pfb_bin/PreHighPassBinary.bin
 odm/etc/camera/pfb_bin/PreHighPassPreBinary.bin
@@ -527,25 +609,35 @@ odm/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip
 odm/etc/camera/sticker/M_SenseME_Action_5.2.12.model
 odm/etc/camera/AiFace.json
 odm/etc/camera/BodySeg.json
+odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/M_FaceAttribute_RGB.model
 odm/etc/camera/Vega_Align_occlusion.model
+odm/etc/camera/Vega_Align_occlusion_snap.model
 odm/etc/camera/Vega_Attribute_Face_RGB.model
 odm/etc/camera/Vega_Detect_AnimalBodyFaceEye_Gray.model
+odm/etc/camera/Vega_Detect_BodyHead_Gray.model
 odm/etc/camera/Vega_Detect_CommonFace_BGR.model
 odm/etc/camera/Vega_Detect_CommonFace_BGR_PZ.model
 odm/etc/camera/Vega_Front_Align_occlusion.model
 odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye.model
+odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_BGR.model
+odm/etc/camera/Vega_Refine_RectQuality_HumanBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Track_AnimalsBodyFaceEye_Gray.model
 odm/etc/camera/Vega_Track_FaceRect20cls.model
+odm/etc/camera/Vega_Track_FaceRect20cls_snap.model
+odm/etc/camera/Vega_Track_HumanBody_Gray.model
 odm/etc/camera/aiboost_qnn_htp2.7.2_16382673562495086299.bin
 odm/etc/camera/aiboost_qnn_htp2.7.2_828413902960689361.bin
 odm/etc/camera/anc_cl_kernel.cache
 odm/etc/camera/anc_cl_kernel_ins.cache
+odm/etc/camera/camera_engmode.xml
 odm/etc/camera/capture_bokeh_params.json
 odm/etc/camera/capture_lutportrait_params.json
 odm/etc/camera/capture_neonportrait_params.json
 odm/etc/camera/conf_tuning_params.json
 odm/etc/camera/distortionParams.bin
+odm/etc/camera/eis_camera.vcfg
+odm/etc/camera/facesr_ff_v4.3.20_qcom8750_rQsQ_normal@nb_quant_qnn2.25.5_20241106.model
 odm/etc/camera/fb_default
 odm/etc/camera/fdc_cl.cache
 odm/etc/camera/fdc_lite_cl.cache
@@ -554,32 +646,31 @@ odm/etc/camera/gasryuv_1.2_wp.model
 odm/etc/camera/license_release_fdc.lic
 odm/etc/camera/main_inv_mapxy_33x25.bin
 odm/etc/camera/main_mapxy_33x25.bin
+odm/etc/camera/media_profiles.xml
 odm/etc/camera/model_fdc.data
-odm/etc/camera/stereoParams.bin
 odm/etc/camera/mvg_sat_config.json
-odm/etc/camera/CaliData/stereoParams_golden.bin
 odm/etc/camera/neon_yuv_LUT_64.bin
+odm/etc/camera/oplus_eis_camera.vcfg
 odm/etc/camera/qnn_binary_9052758122668408981.bin
 odm/etc/camera/salient2_seg.bin
 odm/etc/camera/self_ois.ocfg
 odm/etc/camera/selfbokehParam.json
 odm/etc/camera/selfbokehmodel.bin
+odm/etc/camera/settings_fdc.txt
+odm/etc/camera/settings_fdc_lite.txt
+odm/etc/camera/stereoParams.bin
 odm/etc/camera/tele_inv_mapxy_33x25.bin
 odm/etc/camera/tele_mapxy_33x25.bin
 odm/etc/camera/text_enhance_yuv_v1.tflite
+odm/etc/camera/v10_vamm_sig_norm_0408_8143-SIM.bin
 odm/etc/camera/wide_inv_padding_mapxy_33x25.bin
 odm/etc/camera/wide_padding_mapxy_33x25.bin
 odm/etc/init/init.camera_process.rc
-odm/etc/init/init.camera_update.rc
 odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc
 odm/etc/vintf/manifest/manifest_oplus_camera_rfi.xml
 odm/etc/vintf/manifest/manifest_oplus_cammidasservice_aidl.xml
 odm/etc/vintf/manifest/manifest_oplus_sendextcamcmd.xml
 odm/etc/vintf/manifest/vendor.oplus.camera.aon-impl.xml
-odm/lib64/camera/AIAWB_q.odnn
-odm/lib64/libVideoLTM.so
-odm/lib64/libVideoAIProc.so
-odm/lib64/camera/awb_parameter_default.bin
 odm/lib64/camera/components/com.oplus.node.depth.so
 odm/lib64/camera/components/com.oplus.node.evaof.so
 odm/lib64/camera/components/com.oplus.node.mvgsat.so
@@ -587,8 +678,6 @@ odm/lib64/camera/components/com.oplus.node.preview.so
 odm/lib64/camera/components/com.oplus.node.sstabdefer.so
 odm/lib64/camera/components/com.oplus.node.sstabphoto.so
 odm/lib64/camera/components/com.oplus.node.sstabrealt.so
-odm/lib64/camera/components/com.oplus.node.videoainr.so;DISABLE_CHECKELF
-odm/lib64/camera/components/com.oplus.node.videoltm.so;DISABLE_CHECKELF
 odm/lib64/camera/components/com.oplus.stats.aec.so
 odm/lib64/camera/components/com.oplus.stats.af.so
 odm/lib64/camera/components/com.oplus.stats.awb.so
@@ -596,6 +685,36 @@ odm/lib64/camera/components/com.oplus.stats.pdlib.so
 odm/lib64/camera/components/libcamxoemsatsoftwarefusionwrapper.so
 odm/lib64/camera/components/libcamxoemsatwrapper.so
 odm/lib64/camera/components/libopluscolorsensorwrapper.so
+odm/lib64/camera/awb_parameter_default.bin
+odm/lib64/camera/awb_parameter_paganiFront.bin
+odm/lib64/camera/awb_parameter_paganiMain.bin
+odm/lib64/camera/awb_parameter_paganiTele.bin
+odm/lib64/camera/awb_parameter_paganiWide.bin
+odm/lib64/camera/com.qti.sensor.paganiFront.so
+odm/lib64/camera/com.qti.sensor.paganiMain.so
+odm/lib64/camera/com.qti.sensor.paganiTele.so
+odm/lib64/camera/com.qti.sensor.paganiWide.so
+odm/lib64/camera/com.qti.sensormodule.paganiFront.bin
+odm/lib64/camera/com.qti.sensormodule.paganiMain.bin
+odm/lib64/camera/com.qti.sensormodule.paganiTele.bin
+odm/lib64/camera/com.qti.sensormodule.paganiWide.bin
+odm/lib64/camera/com.qti.sensorsocmap.socid_map.bin
+odm/lib64/camera/com.qti.tuned.default.sun.bin
+odm/lib64/camera/com.qti.tuned.paganiFront.bin
+odm/lib64/camera/com.qti.tuned.paganiMain.bin
+odm/lib64/camera/com.qti.tuned.paganiTele.bin
+odm/lib64/camera/com.qti.tuned.paganiWide.bin
+odm/lib64/camera/libaecCustomParam_Cam0.bin
+odm/lib64/camera/libaecCustomParam_Cam1.bin
+odm/lib64/camera/libaecCustomParam_Cam2.bin
+odm/lib64/camera/libaecCustomParam_Cam3.bin
+odm/lib64/camera/libafCustomParam_Cam0.bin
+odm/lib64/camera/libafCustomParam_Cam1.bin
+odm/lib64/camera/libafCustomParam_Cam2.bin
+odm/lib64/camera/libafCustomParam_Cam3.bin
+odm/lib64/camera/libpdCustomParam_Cam0.bin
+odm/lib64/camera/revision.txt
+odm/lib64/hw/camera.oemlayer.so
 odm/lib64/com.oplus.mcx.linearmapper.so
 odm/lib64/lib2DSlender.so
 odm/lib64/libAECParamParser.so
@@ -610,7 +729,6 @@ odm/lib64/libAncSegmentSdk.so
 odm/lib64/libBasicTonePhoto.so
 odm/lib64/libBokehPre.so
 odm/lib64/libCS.so
-odm/lib64/libSpecRecon.so
 odm/lib64/libCaptureBokeh.so
 odm/lib64/libDocRectification.so
 odm/lib64/libEIS.so
@@ -622,8 +740,8 @@ odm/lib64/libHDRDetection.so
 odm/lib64/libHIS.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
 odm/lib64/libImplicitWatermark.so
-odm/lib64/libODNN.so
 odm/lib64/libMNN.so
+odm/lib64/libODNN.so
 odm/lib64/libOPAlgoCamAIBeautyBodyDetection.so
 odm/lib64/libOPAlgoCamAiBeautyFaceRetouchCn.so
 odm/lib64/libOPAlgoCamAiUnifySkin.so
@@ -637,6 +755,7 @@ odm/lib64/libOplusPDCore.so
 odm/lib64/libOpo_awb.so
 odm/lib64/libPDParamParser.so
 odm/lib64/libRedeyeReduce.so
+odm/lib64/libSpecRecon.so
 odm/lib64/libSuperRaw.so
 odm/lib64/libUpScale.so
 odm/lib64/libWaterMark.so
@@ -659,6 +778,7 @@ odm/lib64/libapsultrahdr.so
 odm/lib64/libapsyuv.so
 odm/lib64/libarc.ion.so
 odm/lib64/libarcsoft_ai_moon.so
+odm/lib64/libarcsoft_distortion_correction.so
 odm/lib64/libarcsoft_dualcam_bokeh_api.so
 odm/lib64/libarcsoft_dualcam_bokeh_image.so
 odm/lib64/libarcsoft_dualcam_bokeh_preview.so
@@ -681,6 +801,8 @@ odm/lib64/libc++_shared.so
 odm/lib64/libcam.odnn.interface.so
 odm/lib64/libcam.oplus.3a.v2.so
 odm/lib64/libcam.oplus.3a.v3.so
+odm/lib64/libcreateFDCLitecachebin.so
+odm/lib64/libcreateFDCcachebin.so
 odm/lib64/libcreatebin.so
 odm/lib64/libcreatebinForBaseretouch.so
 odm/lib64/libcreatebinForFaceretouch.so
@@ -707,8 +829,6 @@ odm/lib64/liboutils.so
 odm/lib64/libpngwrapper.so
 odm/lib64/libsat.so
 odm/lib64/libsaveshaderbin.so
-odm/lib64/libcreateFDCcachebin.so
-odm/lib64/libcreateFDCLitecachebin.so
 odm/lib64/libsegmentPrePostProc.so
 odm/lib64/libsensorbridge.so
 odm/lib64/libsharebuffer.so
@@ -902,20 +1022,16 @@ vendor/lib64/camera/com.qti.tuned.shinetech_imx688_rear.sun.bin
 vendor/lib64/camera/com.qti.tuned.shinetech_ov32c.sun.bin
 vendor/lib64/camera/com.qti.tuned.sony_imx888.sun.bin
 vendor/lib64/camera/com.qti.tuned.tpg.sun.bin
-vendor/lib64/camera/dodgefront_3.pb
+vendor/lib64/camera/paganiFront_3.pb
 vendor/lib64/camera/fdconfigoffline.bin
 vendor/lib64/camera/fdconfigpreview.bin
 vendor/lib64/camera/fdconfigpreviewlite.bin
 vendor/lib64/camera/fdconfigsecure.bin
 vendor/lib64/camera/fdconfigvideo.bin
 vendor/lib64/camera/fdconfigvideolite.bin
-vendor/lib64/camera/hummerFront_3.pb
 vendor/lib64/camera/imx480_3.pb
 vendor/lib64/camera/imx615_3.pb
-vendor/lib64/camera/petrelfrontmain_3.pb
-vendor/lib64/camera/petrelfrontsub_4.pb
 vendor/lib64/camera/qfdserviceconfig.bin
-vendor/lib64/camera/zffront_3.pb
 vendor/lib64/hw/camera.qcom.sm8750.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.offline.so
@@ -1054,100 +1170,6 @@ vendor/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so;MODULE_SUFFIX=_vend
 vendor/lib64/vendor.qti.hardware.camera.aon-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.offlinecamera-service-impl.so
 
-
-odm/etc/camera/config/paganiInFront
-odm/etc/camera/config/paganiInMain
-odm/etc/camera/config/paganiInTele
-odm/etc/camera/dng/ColorMatrix1_paganiInMain.txt
-odm/etc/camera/dng/ColorMatrix1_paganiInTele.txt
-odm/etc/camera/dng/ColorMatrix2_paganiInMain.txt
-odm/etc/camera/dng/ColorMatrix2_paganiInTele.txt
-odm/etc/camera/dng/D28HUESATMap_paganiInMain.txt
-odm/etc/camera/dng/D28HUESATMap_paganiInTele.txt
-odm/etc/camera/dng/D65HUESATMap_paganiInMain.txt
-odm/etc/camera/dng/D65HUESATMap_paganiInTele.txt
-odm/etc/camera/dng/ToneCurve_paganiInMain.txt
-odm/etc/camera/dng/ToneCurve_paganiInTele.txt
-odm/lib64/camera/awb_parameter_paganiInFront.bin
-odm/lib64/camera/awb_parameter_paganiInMain.bin
-odm/lib64/camera/awb_parameter_paganiInTele.bin
-odm/lib64/camera/awb_parameter_paganiInWide.bin
-odm/lib64/camera/com.qti.sensormodule.paganiInFront.bin
-odm/lib64/camera/com.qti.sensormodule.paganiInMain.bin
-odm/lib64/camera/com.qti.sensormodule.paganiInTele.bin
-odm/lib64/camera/com.qti.sensormodule.paganiInWide.bin
-odm/lib64/camera/com.qti.sensor.paganiInFront.so
-odm/lib64/camera/com.qti.sensor.paganiInMain.so
-odm/lib64/camera/com.qti.sensor.paganiInTele.so
-odm/lib64/camera/com.qti.sensor.paganiInWide.so
-odm/lib64/camera/com.qti.tuned.paganiInFront.bin
-odm/lib64/camera/com.qti.tuned.paganiInMain.bin
-odm/lib64/camera/com.qti.tuned.paganiInTele.bin
-odm/lib64/camera/com.qti.tuned.paganiInWide.bin
-
-odm/lib64/hw/camera.oemlayer.so
-
-# camera pagani from PKX110_16.3.501
-odm/lib64/camera/awb_parameter_paganiFront.bin|8dc824b112870e97249257819d56472c4735029d
-odm/lib64/camera/awb_parameter_paganiMain.bin|60200e85595eae14c67e79af43c3957709eb5dda
-odm/lib64/camera/awb_parameter_paganiTele.bin|fe95c5608f70239c28a30cb5ad36d26774574f4c
-odm/lib64/camera/awb_parameter_paganiWide.bin|60200e85595eae14c67e79af43c3957709eb5dda
-odm/lib64/camera/com.qti.sensormodule.paganiFront.bin|49f6f20347e45bbd3182c7285bed59aa2b03361f
-odm/lib64/camera/com.qti.sensormodule.paganiMain.bin|fe7dde7c865342af7d071a66d2c2de8552e07a4c
-odm/lib64/camera/com.qti.sensormodule.paganiTele.bin|8814cbe8a223d07ac8f6ffaee8c18a63ca51b5ad
-odm/lib64/camera/com.qti.sensormodule.paganiWide.bin|643e8bad5a336bebdede09e7561ad851ef18c594
-odm/lib64/camera/com.qti.sensor.paganiFront.so|f8f8e35e25ea64bd3dba95c1f45c5295512d4832
-odm/lib64/camera/com.qti.sensor.paganiMain.so|38d93a97ad0d963217ddcce27c85b3089ec0d6fb
-odm/lib64/camera/com.qti.sensor.paganiTele.so|7bdd327f3357b96de2742d00153ecab383baeb37
-odm/lib64/camera/com.qti.sensor.paganiWide.so|ce2aa7d0219fba6b5f34aadd6b5411ff86c55a4b
-odm/lib64/camera/com.qti.tuned.paganiFront.bin|c49643cbfd7d2084985c2045d975f1389f9252cd
-odm/lib64/camera/com.qti.tuned.paganiMain.bin|aee8d91a3f07306abe94ca36569630b6c35c097a
-odm/lib64/camera/com.qti.tuned.paganiTele.bin|2f18b07a52ae0700571e256db781b67727ac0030
-odm/lib64/camera/com.qti.tuned.paganiWide.bin|ec6f3d9c750864fa18bb2be812c0954d380ea9c2
-odm/etc/camera/config/paganiFront|3956f547e5f91ed5810762675fc499b2854920d6
-odm/etc/camera/config/paganiMain|0c7ae44efe2450588bfce70fc6da8d65aec8c0f6
-odm/etc/camera/config/paganiTele|c4266228c7e5ee2d3f95c02e70c504a53b1d7c9c
-odm/etc/camera/dng/ColorMatrix1_paganiMain.txt|6f4aa4a4f79aa3bd04f53cfefff47756f4a60755
-odm/etc/camera/dng/ColorMatrix1_paganiTele.txt|db656697831b33a5587ec0f5d3acce902b072f9d
-odm/etc/camera/dng/ColorMatrix2_paganiMain.txt|b6da9e97061db6d5f1070351cde8971b30781a99
-odm/etc/camera/dng/ColorMatrix2_paganiTele.txt|6d01cf334a0982d148c103962906f9433a87f2f2
-odm/etc/camera/dng/D28HUESATMap_paganiMain.txt|196090343d206b2a112992c8c3ce47a2f645a1bb
-odm/etc/camera/dng/D28HUESATMap_paganiTele.txt|2d694f25b0e6210f1c0e737bf4f37871eec04575
-odm/etc/camera/dng/D65HUESATMap_paganiMain.txt|8d4bfb4fc59e24e090210cc043fdd7487ca2b3c2
-odm/etc/camera/dng/D65HUESATMap_paganiTele.txt|843e1868990d833961ad362db24b319693cc33e3
-odm/etc/camera/dng/ToneCurve_paganiMain.txt|a217479129dced381521b0470cbdbdd3f354b25d
-odm/etc/camera/dng/ToneCurve_paganiTele.txt|a217479129dced381521b0470cbdbdd3f354b25d
-odm/etc/camera/omoji/assets/sdk_assets/ai_face_processor_e51.bundle|a43faba72be0a573a2d6cfcdad89fb0bbeac200b
-odm/etc/camera/omoji/assets/sdk_assets/controller_cpp.bundle|34930d1d1f3f1915b492cee2be2962595a1551ef
-odm/etc/camera/camera_engmode.xml|bd96e580ca6ee0aee257cea57929157ee5853e68
-odm/etc/camera/CameraHWConfiguration.config|144d2f8779f74a98e498841c36148ffb1624299d
-odm/etc/camera/eis_camera.vcfg|eda89d5e05e8b19279f7b70fd6f7ea7d42010d08
-odm/etc/camera/oplus_eis_camera.vcfg|971614703f3ad58a7cc6dd3620ed690b8f9989ea
-odm/etc/camera/settings_fdc_lite.txt|27e0f7ec249a829121ff97089012821a2e794ae4
-odm/etc/camera/settings_fdc.txt|145a10aabeb4b733db5abd4d5b0420c4b6d9d843
-odm/etc/camera/vainr_cfg.json|f4c5fcb6a0cfe79e578d504b8327f37267e1d5eb
-odm/etc/power_profile/power_profile.xml|a44d784423d6c9134df7032534678b0294c8859d
-odm/lib64/camera/com.qti.sensorsocmap.socid_map.bin|007bb9dbb8986df3db66ed425d05f441852d3669
-odm/lib64/camera/com.qti.tuned.default.sun.bin|6aa7a73d7dfa9d25f57cd8bdd99596fdb1cdc068
-odm/lib64/camera/libaecCustomParam_Cam0.bin|790f7be4227df009e38c6b3cd312cb3408d9f603
-odm/lib64/camera/libaecCustomParam_Cam1.bin|1145985970ccfe298cf23bdad4fc90a82bba7cea
-odm/lib64/camera/libaecCustomParam_Cam2.bin|8f70dddc9715041daee972f1d6fbb6b6965cf945
-odm/lib64/camera/libaecCustomParam_Cam3.bin|9c66b924d58dee89f4863a086a20758b4f75752c
-odm/lib64/camera/libafCustomParam_Cam0.bin|871aa9c8a15abfbdf050647877992377fe008366
-odm/lib64/camera/libafCustomParam_Cam1.bin|6bfbe99ffa940fa928d2841a01c0dff4435a7da3
-odm/lib64/camera/libafCustomParam_Cam2.bin|741cc287df347382142a62b823391dd512da541d
-odm/lib64/camera/libafCustomParam_Cam3.bin|a0533b0c6362539a2aabf87853182374b150a329
-odm/lib64/camera/libpdCustomParam_Cam0.bin|7ca475301a3aa529728015613a6968fa8436e651
-odm/lib64/camera/revision.txt|354ef651de0b48a1f998f816f36936fb9a8017c9
-odm/etc/camera/config/camera_third_party_feature_config.protobuf|be7f82c3f48dc440a935551b76ace55cdd5d39b3
-odm/etc/camera/config/camera_unit_feature_config.protobuf|261d83dd135a9e1bd19799cbec6fcdd1f4201689
-odm/etc/camera/config/oplus_camera_algo_switch_config|83d112499f46782b873bb0bc35db773b9601d9b3
-odm/etc/camera/config/oplus_camera_aps_config|d291f2d085d4c4518d42580bf2aebc7f0ad1fc74
-odm/etc/camera/config/oplus_camera_config|8cd102084077bf0f20c652b36a5dc35c0afd31ca
-odm/etc/camera/config/oplus_camera_preview_decision_config.json|5328b040043ed46b68a3b7c537378bd4d0e451f3
-odm/etc/camera/config/oplus_preview_decision_params.json|d6d9b0c801afc42ec2ceb3f2423b9cbb34f90462
-odm/etc/camera/Owl_Algo_model/Owl_Algo_F_FHD.bin|1004cec0a05f7778a4c9f246b1b16b9811fb1e44
-
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00
 vendor/firmware/CAMERA_ICP.b01
@@ -1199,16 +1221,14 @@ vendor/firmware/CAMERA_ICP_1.mbn
 vendor/firmware/CAMERA_ICP_1.mdt
 vendor/firmware/CAMERA_ICP_170.elf
 
-
-# Charger firmware from PKX110_16.3.501
-odm/firmware/fastchg/batt_dchg_ctrl_config_table.txt|86f1a8fd0222dab65d9d1b3b9ff6d77da11cdf27
-odm/firmware/fastchg/batt_eis_config.txt|215ec6d122b76c7e23ce19d97a2ded5f295c27bf
-odm/firmware/fastchg/batt_si_loss_config_table.txt|bde5e407d610597f8bd6b167441a8df99a4209f5
-odm/firmware/fastchg/bms_heating_config.txt|3c79fcac689c777bd32b0794b65cc7b7b7384bd9
-odm/firmware/fastchg/charging_thermal_config_default.txt|6eb0790cda4a7d1f9a168679c16572e700c095dd
-odm/firmware/fastchg/smart_chg_config_table.txt|28fba3124db70d6d9bb658b6ed528f4c7891d152
-odm/firmware/fastchg/24821/charging_hyper_mode_config.txt|d78a4acdbce836095c8014caa66da4fef78119f4
-
+# Charger firmware
+odm/firmware/fastchg/24821/charging_hyper_mode_config.txt
+odm/firmware/fastchg/batt_dchg_ctrl_config_table.txt
+odm/firmware/fastchg/batt_eis_config.txt
+odm/firmware/fastchg/batt_si_loss_config_table.txt
+odm/firmware/fastchg/bms_heating_config.txt
+odm/firmware/fastchg/charging_thermal_config_default.txt
+odm/firmware/fastchg/smart_chg_config_table.txt
 
 # Display calibration data
 odm/etc/display/qdcm_calib_data_AA594_P_7_A0020_dsc_cmd_mode_panel.json
@@ -1217,6 +1237,12 @@ odm/etc/display/qdcm_calib_data_AA594_P_7_A0020_dsc_cmd_mode_panel.json
 my_product/vendor/etc/display_apollo_list_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_apollo_list_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
 my_product/vendor/etc/display_dbvgain_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_dbvgain_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
 my_product/vendor/etc/display_demura_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml:vendor/etc/display_demura_config_v2_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
+odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_100nit.odf
+odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_2nit.odf
+odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_1_max.odf
+odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_2_100nit.odf
+odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_2_2nit.odf
+odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_2_max.odf
 odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Cinema_100nits_pGC.txt
 odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Cinema_2nits_pGC.txt
 odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Cinema_pGC.txt
@@ -1237,13 +1263,8 @@ odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_100nits_pGC.txt
 odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt
 odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_pGC.txt
 odm/etc/sdm_display_resolution_extn.xml:vendor/etc/display/sdm_display_resolution_extn.xml;TRYSRCFIRST
-<<<<<<< HEAD
 vendor/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
 vendor/etc/spr_cfg_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
-=======
-vendor/etc/ltm_config_AA569_P_3_A0019_dsc_cmd_mode_panel.xml
-vendor/etc/spr_cfg_AA569_P_3_A0019_dsc_cmd_mode_panel.xml
->>>>>>> 0a887e5 (pagani: Remove eUUIC support)
 
 # Fingerprint firmware
 odm/firmware/uff_jv.b00
@@ -1268,7 +1289,7 @@ odm/firmware/uff_spi.b08
 odm/firmware/uff_spi.mdt
 
 # NFC
-odm/etc/nfc/libnfc-mtp-SN220.conf_24821:odm/etc/libnfc-mtp-SN220.conf_24821
+odm/etc/nfc/libnfc-mtp-SN220.conf_24821:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_24821:vendor/etc/libnfc-nci.conf
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
@@ -1278,6 +1299,7 @@ vendor/lib64/sensors.qsh.so
 # Sensors config
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/lux_aod.json
+odm/etc/sensor/config/oplus_rotation_detect.json
 odm/etc/sensor/config/pagani_qrd_ois_system.json
 odm/etc/sensor/config/pakala_mtp_ak09919.json
 odm/etc/sensor/config/pakala_mtp_alsps.json
@@ -1299,7 +1321,6 @@ vendor/etc/sensors/config/qsh_camera_imx615_3.json
 vendor/etc/sensors/config/qsh_camera_imx688_6.json
 vendor/etc/sensors/config/qsh_camera_imx688_6_actuator.json
 vendor/etc/sensors/config/qsh_camera_ov32c4c_4.json
-
 
 # Touchscreen firmware
 odm/firmware/tp/24821/FW_S3910_TIANMA_HBP.img
@@ -1350,6 +1371,7 @@ odm/etc/vibrator/809/def/effect_304.bin
 odm/etc/vibrator/809/def/effect_305.bin
 odm/etc/vibrator/809/def/effect_308.bin
 odm/etc/vibrator/809/def/effect_318.bin
+odm/etc/vibrator/809/def/effect_362.bin
 odm/etc/vibrator/809/def/effect_363.bin
 odm/etc/vibrator/809/def/effect_364.bin
 odm/etc/vibrator/809/def/effect_365.bin
