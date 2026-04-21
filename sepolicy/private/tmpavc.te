@@ -1,6 +1,0 @@
-type sysfs_oplus_display, sysfs_type, fs_type;
-allow mediaserver media_quality_service:service_manager { find };
-allow system_server zygote_tmpfs:file { write };
-
-allow hal_fingerprint_server sysfs_oplus_display:file rw_file_perms;
-allow hal_fingerprint_server sysfs_oplus_display:dir search;
