@@ -1,2 +1,0 @@
-type sysfs_irq_name, fs_type, sysfs_type;
-allow system_suspend sysfs_irq_name:file { read open getattr };

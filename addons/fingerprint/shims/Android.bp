@@ -6,17 +6,8 @@
 
 cc_defaults {
     name: "libshims_aidl_fingerprint.pagani_defaults",
-    srcs: [
-        "SensorPropsShim.cpp",
-        "FppressShim.cpp",
-        ],
-    shared_libs: [
-        "libbinder_ndk",
-        "liblog",
-        "libdl",
-        "libbase",
-    ],
-    cflags: ["-Wno-unused-parameter"],
+    srcs: ["SensorPropsShim.cpp"],
+    shared_libs: ["libbase"],
     device_specific: true,
 }
 

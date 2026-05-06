@@ -1,1 +1,0 @@
-/sys/kernel/irq/[0-9]+/name    u:object_r:sysfs_irq_name:s0
