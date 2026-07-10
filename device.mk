@@ -26,10 +26,6 @@ PRODUCT_COPY_FILES += \
 # Fingerprint
 $(call soong_config_set,surfaceflinger,udfps_lib,//device/oneplus/pagani/addons/fingerprint:libudfps_extension.pagani)
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
-
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
     OPlusSettingsProviderResTarget \

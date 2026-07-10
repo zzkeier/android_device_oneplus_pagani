@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2025 The LineageOS Project
+# Copyright (C) 2026 The Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,10 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from pagani device
 $(call inherit-product, device/oneplus/pagani/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-PRODUCT_NAME := lineage_pagani
+PRODUCT_NAME := aosp_pagani
 PRODUCT_DEVICE := pagani
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
