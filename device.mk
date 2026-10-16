@@ -9,9 +9,9 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Alert slider
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key-calibrate
+# PRODUCT_PACKAGES += \
+#     KeyHandler \
+#     tri-state-key-calibrate
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
 # Power
 $(call soong_config_set,qtipower,mode_ext_lib,power-ext-oplus)
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+    
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.oplus

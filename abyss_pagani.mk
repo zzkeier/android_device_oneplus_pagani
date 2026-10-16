@@ -12,9 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/pagani/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/abyss/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_pagani
+PRODUCT_NAME := abyss_pagani
 PRODUCT_DEVICE := pagani
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

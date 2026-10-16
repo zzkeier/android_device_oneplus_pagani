@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pagani.mk
+    $(LOCAL_DIR)/abyss_pagani.mk
