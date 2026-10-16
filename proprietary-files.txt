@@ -1253,9 +1253,34 @@ odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Nature_pGC.txt
 odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_100nits_pGC.txt
 odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_2nits_pGC.txt
 odm/etc/PanelChaplin/AA594_P_7_A0020_dsc_cmd_mode_panel_Vivid_pGC.txt
+odm/etc/PanelChaplin/panelchaplin
 odm/etc/sdm_display_resolution_extn.xml:vendor/etc/display/sdm_display_resolution_extn.xml;TRYSRCFIRST
 vendor/etc/ltm_config_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
 vendor/etc/spr_cfg_AA594_P_7_A0020_dsc_cmd_mode_panel.xml
+
+# Dolby Vision
+odm/bin/hw/dvs-aidl-service
+odm/etc/dolby/display/dolby_vision.cfg
+odm/etc/dolby/dolby_vision.cfg
+odm/etc/init/dvs-aidl-service.rc
+odm/etc/vintf/manifest/dvs-aidl-service.xml
+odm/etc/media_codecs_dolby_vision.xml:vendor/etc/media_codecs_dolby_vision.xml
+odm/lib64/vendor.dolby.dvs-V1-ndk.so
+
+# Face unlock
+odm/lib64/libstfaceunlockocl_uff.so;FIX_SONAME
+
+# Face unlock firmware
+odm/firmware/uff_face.b00
+odm/firmware/uff_face.b01
+odm/firmware/uff_face.b02
+odm/firmware/uff_face.b03
+odm/firmware/uff_face.b04
+odm/firmware/uff_face.b05
+odm/firmware/uff_face.b06
+odm/firmware/uff_face.b07
+odm/firmware/uff_face.b08
+odm/firmware/uff_face.mdt
 
 # Fingerprint firmware
 odm/firmware/uff_jv.b00
@@ -1279,15 +1304,21 @@ odm/firmware/uff_spi.b07
 odm/firmware/uff_spi.b08
 odm/firmware/uff_spi.mdt
 
+# Horae
+odm/etc/horae/horae_target.conf
+
 # NFC
 odm/etc/nfc/libnfc-mtp-SN220.conf_24821:vendor/etc/libnfc-nxp.conf
 odm/etc/nfc/libnfc-nci.conf_24821:vendor/etc/libnfc-nci.conf
+
+# NFC firmware
 odm/etc/nfc/sn220u.bin_sn220tu_fw_01_01_45:vendor/firmware/sn220u.bin
 
 # Sensors
 vendor/lib64/sensors.qsh.so
 
 # Sensors config
+odm/etc/display/cwb_weightspos.json
 odm/etc/sensor/config/json_list
 odm/etc/sensor/config/lux_aod.json
 odm/etc/sensor/config/oplus_rotation_detect.json
