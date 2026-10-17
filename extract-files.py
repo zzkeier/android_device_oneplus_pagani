@@ -80,8 +80,7 @@ module = ExtractUtilsModule(
     'oneplus',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
-    lib_fixups=lib_fixups,
-    add_firmware_proprietary_file=True,
+    lib_fixups=lib_fixups
 )
 
 add_generated_thermal_engine_config(module)
