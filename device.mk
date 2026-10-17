@@ -23,7 +23,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/displayconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946640660707475.xml
 
 # Fingerprint
-$(call soong_config_set,surfaceflinger,udfps_lib,//device/oneplus/pagani/addons/fingerprint:libudfps_extension.pagani)
+# Use the shared implementation from hardware/oplus instead of keeping a local
+# copy under addons/ in the device tree.
+$(call soong_config_set,surfaceflinger,udfps_lib,//hardware/oplus/fingerprint:libudfps_extension.oplus)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
